@@ -1,0 +1,28 @@
+{
+  "name": "@hehe/tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest packages/",
+    "build:add": "pnpm run --filter @hehe/add build",
+    "build": "pnpm run --filter=\"@hehe/*\" build",
+    "lint": "eslint packages/**/src",
+    "lint:fix": "eslint packages/**/src --fix",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.29.3",
+    "@vitest/coverage-istanbul": "^0.24.5",
+    "eslint": "^8.26.0",
+    "jsdom": "^20.0.2",
+    "typescript": "^4.8.4",
+    "unbuild": "^0.9.4",
+    "vite": "^3.2.2",
+    "vitest": "^0.24.5"
+  }
+}
